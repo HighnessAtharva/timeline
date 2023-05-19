@@ -284,15 +284,17 @@ a:visited {
 
 .timeline-series dt a {
   cursor: pointer;
-  background: white;
-  color: black;
+  color: antiquewhite;
   font-family: fangsong;
-  padding: 2px 5px;
+  padding: 5px 5px;
+  border-right: 2px solid white;
+  border-bottom: 1px solid #205204;
+  border-bottom-right-radius: 5px;
+  font-family: monospace;
 }
 
 .timeline-series dt a .closed {
-  background: white;
-  color: black;
+  color: antiquewhite;
   font-family: fangsong;
   padding: 2px 5px;
   font-size: 1em;
@@ -301,10 +303,12 @@ a:visited {
 
 .timeline-series dt a .open {
   color: black;
+  background-color: white;
 }
 
 .timeline-series dt a:hover {
   color: black;
+  background-color: white;
   -webkit-transition: color 0.2s ease-in;
   -moz-transition: color 0.2s ease-in;
   -o-transition: color 0.2s ease-in;
