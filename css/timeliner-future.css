@@ -180,10 +180,8 @@ a:visited {
 }
 
 .timeline-toggle {
-  background: rgb(6 60 0);
-  border: 0;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
+  background-color: rgb(6, 60, 0);
+  border: none;
   border-radius: 4px;
   color: rgba(255, 255, 255, 0.85);
   cursor: pointer;
