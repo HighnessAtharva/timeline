@@ -4,9 +4,46 @@ const timelineData = {
             "year": "2023",
             "months": [
                 {
+                    "monthName": "June",
+                    "monthImage": "img/2023-june.jpg",
+                    "events": [
+                        {
+                            "date": "June 8th",
+                            "description": "Studio Ghibli Gallery Project",
+                            "link": "https://highnessatharva.github.io/Studio-Ghibli-Gallery/"
+                        },
+                        {
+                            "date": "June 6th",
+                            "description": "Joined PaperPedia as an Academic Researcher - Python",
+                            "link": ""
+                        },
+                        {
+                            "date": "June 5th",
+                            "description": "Started Miguel Grinberg's Mega React Tutorial",
+                            "link": "https://blog.miguelgrinberg.com/post/introducing-the-react-mega-tutorial"
+                        },
+                        {
+                            "date": "June 3rd",
+                            "description": "Launch Digital DSA Products on Gumroad",
+                            "link": "https://highnessatharva.gumroad.com/"
+                        },
+                        {
+                            "date": "June 1st",
+                            "description": "Hackathon Project for Techgig Microsoft Github Copilot - Python Weather CLI",
+                            "link": "https://github.com/HighnessAtharva/Techgig-Github-Copilot-Hackathon"
+                        }
+                        
+                    ]
+                },
+                {
                     "monthName": "May",
                     "monthImage": "img/2023-may.jpg",
                     "events": [
+                        {
+                            "date": "May 25th",
+                            "description": "Update Portfolio Website and LinkedIn Profiles",
+                            "link": "https://highnessatharva.github.io/"
+                        },
                         {
                             "date": "May 19th",
                             "description": "Made this project",
@@ -228,18 +265,44 @@ const timelineData = {
             "year": "2022",
             "months": [
                 {
-                    "monthName": "December",
-                    "monthImage": "img/2022-december.jpg",
+                    "monthName": "August",
+                    "monthImage": "img/2022-august.jpg",
                     "events": [
                         {
-                            "date": "DATE",
-                            "description": "EVENT",
+                            "date": "10th August",
+                            "description": "Started Working on VocabCLI",
+                            "link": "https://github.com/HighnessAtharva/VocabCLI"
+                        },
+                        {
+                            "date": "2nd August",
+                            "description": "Finished Semester V Exams",
                             "link": ""
                         },
                         {
-                            "date": "DATE",
-                            "description": "EVENT",
+                            "date": "1st August",
+                            "description": "Finished What You Doin' Right Now Project",
+                            "link": "https://github.com/HighnessAtharva/WYDRN"
+                        },
+                    ]
+                },
+                {
+                    "monthName": "May",
+                    "monthImage": "img/2022-may.jpg",
+                    "events": [
+                        {
+                            "date": "5th May",
+                            "description": "Finished Semester IV Exams",
                             "link": ""
+                        },
+                        {
+                            "date": "2nd May",
+                            "description": "Started work on What You Doin' Right Now",
+                            "link": "https://github.com/HighnessAtharva/WYDRN"
+                        },
+                        {
+                            "date": "1st May",
+                            "description": "Compiled 450 DSA Solutions",
+                            "link": "https://github.com/HighnessAtharva/450-DSA-Python"
                         }
                     ]
                 }
