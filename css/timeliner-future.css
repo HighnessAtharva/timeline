@@ -141,6 +141,10 @@ a:visited {
   color: #78a8b2;
 }
 
+.mini-button>a{
+  color: white;
+}
+
 .timeline-container {
   border-left: 4px solid rgb(6 60 0);
   margin: 20px auto;
@@ -407,4 +411,18 @@ a:visited {
 
 .timeline-event-content .media p a {
   text-transform: lowercase;
+}
+
+.mini-button-container{
+  margin: -40px 20px 20px 20px;  
+  text-align: end;
+}
+
+.mini-button{
+  padding: 10px;
+  background-color: #205204;
+  font-size: medium;
+  border-radius: 5px;
+  border: 1px solid white;
+  color: black;
 }

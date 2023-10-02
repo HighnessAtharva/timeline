@@ -12,14 +12,7 @@
         <h2><span class="step1">Always</span> <span class="step2">Be</span> <span class="step3">Accelarating</span></h2>
         <p class="lead">Step into the time vortex and embark on an epic journey through the wibbly-wobbly timeline of my professional adventures. Picture me, a techbro wizard armed with a keyboard, venturing through the realms of code and creativity. From the early levels of my career, battling pixelated bugs, to harnessing the power of the latest tech like a Jedi mastering the Force, this timeline is a testament to my technical prowess. So grab your 20-sided dice, <a href="https://knowyourmeme.com/photos/1142947-berserk">put your grasses on</a>, and get ready to witness a portfolio timeline that's geek-tastic, innovative, and professionally heroic! </p>
         <p>Note: Some links may be private to me and not work for you.</p>
-        
-        <div class="mini-button-container">
-        <button class="mini-button"><a href="mini.html">MINI version</a></button>
-        </div>
-        <hr>
         <div id="timeline" class="timeline-container">
-            <button class="timeline-toggle">+ expand all</button>
-            <br class="clear">
         </div>
     </div>
     <!-- GLOBAL CORE SCRIPTS -->
@@ -44,54 +37,25 @@
             yearHeading.innerHTML = `<span>${yearData.year}</span>`;
             yearElement.appendChild(yearHeading);
 
-            // Loop through the months in the year
-            for (const monthData of yearData.months) {
-                // Create the month element
-                const monthElement = document.createElement("dl");
-                monthElement.classList.add("timeline-series");
+            // Loop through the events in the year
+            for (const eventData of yearData.yearEvents) {
+                // Create the event element
+                const eventElement = document.createElement("dl");
+                eventElement.classList.add("timeline-series");
 
-                // Create the month heading
-                const monthHeading = document.createElement("dt");
-                monthHeading.setAttribute("id", `${monthData.monthName.toLowerCase()}${yearData.year}`);
-                monthHeading.classList.add("timeline-event");
-                monthHeading.innerHTML = `<a>${monthData.monthName}</a>`;
-                monthElement.appendChild(monthHeading);
-
-                // Create the month content
-                const monthContent = document.createElement("dd");
-                monthContent.setAttribute("id", `${monthData.monthName.toLowerCase()}${yearData.year}EX`);
-                monthContent.classList.add("timeline-event-content");
-
-                //make a div for the image with class media
-                const monthImageDiv = document.createElement("div");
-                monthImageDiv.classList.add("media");
-
-
-                // Create the month image inside the media div
-                const monthImage = document.createElement("img");
-                monthImage.setAttribute("src", monthData.monthImage);
-                monthImage.setAttribute("alt", `${monthData.monthName} ${yearData.year}`);
-                monthImageDiv.appendChild(monthImage);
-
-                //append the media div to the month content
-                monthContent.appendChild(monthImageDiv);
-
-                // Create the events
-                const eventsBlockquote = document.createElement("blockquote");
-                for (const eventData of monthData.events) {
-                    const eventDescription = eventData.link ? `<a href="${eventData.link}">${eventData.description}</a>` : eventData.description;
-                    eventsBlockquote.innerHTML += `<p><b>${eventData.date}</b> - ${eventDescription}</p>`;
-                }
-
-                monthContent.appendChild(eventsBlockquote);
-                monthElement.appendChild(monthContent);
-                yearElement.appendChild(monthElement);
+                // Create the event heading
+                const eventHeading = document.createElement("dt");
+                eventHeading.innerHTML = `<a href="${eventData.link}">${eventData.description}</a>`;
+                eventElement.appendChild(eventHeading);
+                yearElement.appendChild(eventElement);
             }
             timelineContainer.appendChild(yearElement);
         }
 
         // Create the expand all button
         const expandAllButton = document.createElement("button");
+        // make the button hidden
+        expandAllButton.style.display = "none";
         expandAllButton.classList.add("timeline-toggle");
         expandAllButton.innerHTML = "+ expand all";
         timelineContainer.appendChild(expandAllButton);

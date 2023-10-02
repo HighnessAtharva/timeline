@@ -2,6 +2,16 @@ const timelineData = {
     "timeline": [
         {
             "year": "2023",
+            "yearEvents": [
+                {
+                    "description": "TEST #1",
+                    "link": "https://google.com"
+                },
+                {
+                    "description": "TEST #2",
+                    "link": "https://google.com"
+                },
+            ],
             "months": [
                 {
                     "monthName": "June",
@@ -32,7 +42,7 @@ const timelineData = {
                             "description": "Hackathon Project for Techgig Microsoft Github Copilot - Python Weather CLI",
                             "link": "https://github.com/HighnessAtharva/Techgig-Github-Copilot-Hackathon"
                         }
-                        
+
                     ]
                 },
                 {
@@ -184,7 +194,7 @@ const timelineData = {
                             "link": "https://github.com/HighnessAtharva/Leetcode_Grind"
                         },
                         {
-                            
+
                             "date": "March 15th",
                             "description": "Finished the Django FoodOnline Project",
                             "link": "https://github.com/HighnessAtharva/FoodOnline"
@@ -204,7 +214,7 @@ const timelineData = {
                             "description": "Started building Media Analysis (Streamlit)",
                             "link": "https://github.com/HighnessAtharva/Media-Analysis"
                         }
-                            
+
                     ]
                 },
                 {
@@ -263,6 +273,16 @@ const timelineData = {
         },
         {
             "year": "2022",
+            "yearEvents": [
+                {
+                    "description": "Finished Elden Ring",
+                    "link": "#"
+                },
+                {
+                    "description": "Finished Studio Ghibli",
+                    "link": "#"
+                },
+            ],
             "months": [
                 {
                     "monthName": "August",
